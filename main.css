@@ -1,15 +1,12 @@
-/* ---- reset ---- */
 body {
   margin: 0;
+  text-align: center;
 }
 
 canvas {
   display: block;
   vertical-align: bottom;
 }
-
-
-/* ---- particles.js container ---- */
 
 #particles-js {
   position: absolute;
@@ -23,11 +20,10 @@ canvas {
 }
 
 section {
-  text-align: center;
-  padding: 100px;
-  position: relative;
-  width 100%;
-  
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+    display: inline-block;
 }
 
 h1 {
