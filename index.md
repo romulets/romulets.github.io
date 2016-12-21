@@ -1,37 +1,7 @@
-## Welcome to GitHub Pages
+## Rômulo Massaroth de Farias
 
-You can use the [editor on GitHub](https://github.com/romulets/romulets.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+I'm a young developer with big goals. Studying information system's bachelor at Brazil, I'm looking for personal development and real commitments with real companies. After some experience at the professional world my next badge will be dive into the academic life and teach new developers the best skills of real world!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Now a days my main language is PHP, but I really often use another languages in personal, professional and academic projects (Python, C# .NET and Java) . Together my development skills I study OOP concepts and patterns, thinking a lot about software architecture.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/romulets/romulets.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Well, I have a long road to travel and learn every time more is the best way to reach my goals :)
