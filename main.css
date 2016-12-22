@@ -111,3 +111,10 @@ a img {
   position: absolute;;
   left: 0px;
 }
+
+
+@media screen and (max-height: 570px) {
+  .wrapper {
+    pointer-events: auto;
+  }
+}
