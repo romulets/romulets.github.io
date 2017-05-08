@@ -538,7 +538,7 @@ pre.editor-colors .fold-marker:after,
 <p>So wrapping it up, an OS abstracts the hardware, managing its resources and giving to apps an abstract environment of execution, where the access to the hardware happens using simple API&#39;s. Those API&#39;s should be consistent, don&#39;t matter in which hardware it is executing.</p>
 <p><em>Obs: A user level software can&#39;t access a hardware resource. It always have to request the action to OS</em></p>
 <h3 id="components-of-an-os">Components of an OS</h3>
-<p><img src="/home/romulo-farias/Documents/university/5th_semester/OperationalSystems/half1/components-of-os.png" alt="Components of an OS"></p>
+<p><img src="components-of-os.png" alt="Components of an OS"></p>
 <h2 id="functionalities">Functionalities</h2>
 <p>To achieve its goals of abstraction and resources management, an Operational System must cover a lot of areas. Each one of the system&#39;s resources have their own problems to be solved. Some of the implementations are:</p>
 <ul>
@@ -572,11 +572,11 @@ pre.editor-colors .fold-marker:after,
 <li><strong>Boot Code:</strong> the hardware booting process requires complex jobs to be done, such as recognize the installed devices, test and setup them to be ready to use. Other important job is load the kernel in the memory and execute it.</li>
 <li><strong>Utilities Programs:</strong> they are programs to make the user&#39;s life easier (files handling, commands interpreter, terminal, user interface, etc)</li>
 </ul>
-<p><img src="/home/romulo-farias/Documents/university/5th_semester/OperationalSystems/half1/unix-system-structure.png" alt="unix-system-structure"></p>
+<p><img src="unix-system-structure.png" alt="unix-system-structure"></p>
 <p>Most of the computers follows an architecture proposed by <em>John Von Neumann</em>. The main idea of this model is a program be loaded into the memory along the data.</p>
 <h2 id="physical-architecture">Physical Architecture</h2>
 <p>The essential components of a computer (CPU, Memory and I/O devices) are connected by buses to transfer data and commands.</p>
-<p><img src="/home/romulo-farias/Documents/university/5th_semester/OperationalSystems/half1/physical-architecture.png" alt="Physical Architecture"></p>
+<p><img src="physical-architecture.png" alt="Physical Architecture"></p>
 <h3 id="buses">Buses</h3>
 <ul>
 <li>Address bus says the memory position to be accessed</li>
@@ -597,7 +597,7 @@ pre.editor-colors .fold-marker:after,
 </ul>
 <h3 id="memory-management-unity-mmu-">Memory Management Unity (MMU)</h3>
 <p>It&#39;s the controller that mediates the access to the memory. It analyzes each address requested by the CPU, valid them, and make the needed address conversions to execute the requested command (read or write of some memory address).</p>
-<p><img src="/home/romulo-farias/Documents/university/5th_semester/OperationalSystems/half1/memories.gif" alt="memories"></p>
+<p><img src="memories.gif" alt="memories"></p>
 <h2 id="interruptions-and-exceptions">Interruptions and Exceptions</h2>
 <p>It&#39;s a important and common technique used in the interaction between CPU and controllers. When a controller has something important to give to the CPU, it has two communication alternatives:</p>
 <ul>
@@ -651,7 +651,7 @@ pre.editor-colors .fold-marker:after,
 <li>Suspended: swapping information from memory</li>
 <li>Finished</li>
 </ul>
-<p><img src="/home/romulo-farias/Documents/university/5th_semester/OperationalSystems/half1/process-life-cycle.png" alt="process-life-cycle"></p>
+<p><img src="process-life-cycle.png" alt="process-life-cycle"></p>
 <p>#Threads</p>
 <p>In a multi-processed/cluster machine we can have a lot of process running at the same time, but there is cases that the need is a concurrence inside of the same process. This problem is resolved using <strong>Threads</strong>.</p>
 <p>Threads are a mechanism to subdivide a process in two or more jobs that can be executed simultaneously. A thread shares the resources given to the parent process.</p>
