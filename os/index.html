@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="robots" content="noindex" />
+      <meta charset="utf-8" />
+      <title>readme</title>
+      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(171, 178, 191); overflow: auto; background-color: rgb(40, 44, 52); }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(124, 135, 156); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(82, 139, 255); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(124, 135, 156); border-color: rgb(75, 83, 98); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top: 2px dashed rgb(75, 83, 98); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(75, 83, 98); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(58, 63, 75); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(49, 54, 63); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(75, 83, 98) rgb(75, 83, 98) rgb(62, 68, 81); background-color: rgb(58, 63, 75); }
+.markdown-preview[data-use-github-style] { font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); overflow: scroll; background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left: 4px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { border-top: 1px solid rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157); }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .horizontal-scrollbar { visibility: visible; }
+.markdown-preview .task-list-item-checkbox { position: absolute; margin: 0.25em 0px 0px -1.4em; }
+.gutter .line-number {
+  background-size: 0px;
+  transition: background-size 0.5s;
+}
+.gutter .line-number.quickfix {
+  background-image: url(atom://atom-typescript/images/light-bulb.png);
+  background-size: 16.66666667px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+pre.editor-colors,
+.host {
+  background-color: #282c34;
+  color: #abb2bf;
+}
+pre.editor-colors .line.cursor-line,
+.host .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+pre.editor-colors .invisible,
+.host .invisible {
+  color: #abb2bf;
+}
+pre.editor-colors .cursor,
+.host .cursor {
+  border-left: 2px solid #528bff;
+}
+pre.editor-colors .selection .region,
+.host .selection .region {
+  background-color: #3e4451;
+}
+pre.editor-colors .bracket-matcher .region,
+.host .bracket-matcher .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+}
+pre.editor-colors .invisible-character,
+.host .invisible-character {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .indent-guide,
+.host .indent-guide {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .wrap-guide,
+.host .wrap-guide {
+  background-color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .find-result .region.region.region,
+.host .find-result .region.region.region,
+pre.editor-colors .current-result .region.region.region,
+.host .current-result .region.region.region {
+  border-radius: 2px;
+  background-color: rgba(82, 139, 255, 0.24);
+  transition: border-color 0.4s;
+}
+pre.editor-colors .find-result .region.region.region,
+.host .find-result .region.region.region {
+  border: 2px solid transparent;
+}
+pre.editor-colors .current-result .region.region.region,
+.host .current-result .region.region.region {
+  border: 2px solid #528bff;
+  transition-duration: .1s;
+}
+pre.editor-colors .gutter .line-number,
+.host .gutter .line-number {
+  color: #636d83;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line,
+.host .gutter .line-number.cursor-line {
+  color: #abb2bf;
+  background-color: #2c313a;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection,
+.host .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+pre.editor-colors .gutter .line-number .icon-right,
+.host .gutter .line-number .icon-right {
+  color: #abb2bf;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before,
+.host .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
+  bottom: -3px;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after,
+.host .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+pre.editor-colors .gutter .line-number.folded,
+.host .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+.host .gutter .line-number:after,
+pre.editor-colors .fold-marker:after,
+.host .fold-marker:after {
+  color: #abb2bf;
+}
+.comment {
+  color: #5c6370;
+  font-style: italic;
+}
+.comment .markup.link {
+  color: #5c6370;
+}
+.entity.name.type {
+  color: #e5c07b;
+}
+.entity.other.inherited-class {
+  color: #98c379;
+}
+.keyword {
+  color: #c678dd;
+}
+.keyword.control {
+  color: #c678dd;
+}
+.keyword.operator {
+  color: #abb2bf;
+}
+.keyword.other.special-method {
+  color: #61afef;
+}
+.keyword.other.unit {
+  color: #d19a66;
+}
+.storage {
+  color: #c678dd;
+}
+.storage.type.annotation,
+.storage.type.primitive {
+  color: #c678dd;
+}
+.storage.modifier.package,
+.storage.modifier.import {
+  color: #abb2bf;
+}
+.constant {
+  color: #d19a66;
+}
+.constant.variable {
+  color: #d19a66;
+}
+.constant.character.escape {
+  color: #56b6c2;
+}
+.constant.numeric {
+  color: #d19a66;
+}
+.constant.other.color {
+  color: #56b6c2;
+}
+.constant.other.symbol {
+  color: #56b6c2;
+}
+.variable {
+  color: #e06c75;
+}
+.variable.interpolation {
+  color: #be5046;
+}
+.variable.parameter {
+  color: #abb2bf;
+}
+.string {
+  color: #98c379;
+}
+.string.regexp {
+  color: #56b6c2;
+}
+.string.regexp .source.ruby.embedded {
+  color: #e5c07b;
+}
+.string.other.link {
+  color: #e06c75;
+}
+.punctuation.definition.comment {
+  color: #5c6370;
+}
+.punctuation.definition.method-parameters,
+.punctuation.definition.function-parameters,
+.punctuation.definition.parameters,
+.punctuation.definition.separator,
+.punctuation.definition.seperator,
+.punctuation.definition.array {
+  color: #abb2bf;
+}
+.punctuation.definition.heading,
+.punctuation.definition.identity {
+  color: #61afef;
+}
+.punctuation.definition.bold {
+  color: #e5c07b;
+  font-weight: bold;
+}
+.punctuation.definition.italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.punctuation.section.embedded {
+  color: #be5046;
+}
+.punctuation.section.method,
+.punctuation.section.class,
+.punctuation.section.inner-class {
+  color: #abb2bf;
+}
+.support.class {
+  color: #e5c07b;
+}
+.support.type {
+  color: #56b6c2;
+}
+.support.function {
+  color: #56b6c2;
+}
+.support.function.any-method {
+  color: #61afef;
+}
+.entity.name.function {
+  color: #61afef;
+}
+.entity.name.class,
+.entity.name.type.class {
+  color: #e5c07b;
+}
+.entity.name.section {
+  color: #61afef;
+}
+.entity.name.tag {
+  color: #e06c75;
+}
+.entity.other.attribute-name {
+  color: #d19a66;
+}
+.entity.other.attribute-name.id {
+  color: #61afef;
+}
+.meta.class {
+  color: #e5c07b;
+}
+.meta.class.body {
+  color: #abb2bf;
+}
+.meta.method-call,
+.meta.method {
+  color: #abb2bf;
+}
+.meta.definition.variable {
+  color: #e06c75;
+}
+.meta.link {
+  color: #d19a66;
+}
+.meta.require {
+  color: #61afef;
+}
+.meta.selector {
+  color: #c678dd;
+}
+.meta.separator {
+  background-color: #373b41;
+  color: #abb2bf;
+}
+.meta.tag {
+  color: #abb2bf;
+}
+.underline {
+  text-decoration: underline;
+}
+.none {
+  color: #abb2bf;
+}
+.invalid.deprecated {
+  color: #523d14 !important;
+  background-color: #e0c285 !important;
+}
+.invalid.illegal {
+  color: #ffffff !important;
+  background-color: #e05252 !important;
+}
+.markup.bold {
+  color: #d19a66;
+  font-weight: bold;
+}
+.markup.changed {
+  color: #c678dd;
+}
+.markup.deleted {
+  color: #e06c75;
+}
+.markup.italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.markup.heading {
+  color: #e06c75;
+}
+.markup.heading .punctuation.definition.heading {
+  color: #61afef;
+}
+.markup.link {
+  color: #c678dd;
+}
+.markup.inserted {
+  color: #98c379;
+}
+.markup.quote {
+  color: #d19a66;
+}
+.markup.raw {
+  color: #98c379;
+}
+.source.c .keyword.operator {
+  color: #c678dd;
+}
+.source.cpp .keyword.operator {
+  color: #c678dd;
+}
+.source.cs .keyword.operator {
+  color: #c678dd;
+}
+.source.css .property-name,
+.source.css .property-value {
+  color: #828997;
+}
+.source.css .property-name.support,
+.source.css .property-value.support {
+  color: #abb2bf;
+}
+.source.gfm .markup {
+  -webkit-font-smoothing: auto;
+}
+.source.gfm .link .entity {
+  color: #61afef;
+}
+.source.go .storage.type.string {
+  color: #c678dd;
+}
+.source.ini .keyword.other.definition.ini {
+  color: #e06c75;
+}
+.source.java .storage.modifier.import {
+  color: #e5c07b;
+}
+.source.java .storage.type {
+  color: #e5c07b;
+}
+.source.java .keyword.operator.instanceof {
+  color: #c678dd;
+}
+.source.java-properties .meta.key-pair {
+  color: #e06c75;
+}
+.source.java-properties .meta.key-pair > .punctuation {
+  color: #abb2bf;
+}
+.source.js .keyword.operator {
+  color: #56b6c2;
+}
+.source.js .keyword.operator.delete,
+.source.js .keyword.operator.in,
+.source.js .keyword.operator.of,
+.source.js .keyword.operator.instanceof,
+.source.js .keyword.operator.new,
+.source.js .keyword.operator.typeof,
+.source.js .keyword.operator.void {
+  color: #c678dd;
+}
+.source.json .meta.structure.dictionary.json > .string.quoted.json {
+  color: #e06c75;
+}
+.source.json .meta.structure.dictionary.json > .string.quoted.json > .punctuation.string {
+  color: #e06c75;
+}
+.source.json .meta.structure.dictionary.json > .value.json > .string.quoted.json,
+.source.json .meta.structure.array.json > .value.json > .string.quoted.json,
+.source.json .meta.structure.dictionary.json > .value.json > .string.quoted.json > .punctuation,
+.source.json .meta.structure.array.json > .value.json > .string.quoted.json > .punctuation {
+  color: #98c379;
+}
+.source.json .meta.structure.dictionary.json > .constant.language.json,
+.source.json .meta.structure.array.json > .constant.language.json {
+  color: #56b6c2;
+}
+.source.ruby .constant.other.symbol > .punctuation {
+  color: inherit;
+}
+.source.python .keyword.operator.logical.python {
+  color: #c678dd;
+}
+.source.python .variable.parameter {
+  color: #d19a66;
+}
+</style>
+  </head>
+  <body class='markdown-preview' data-use-github-style><h1 id="review-operational-systems">Review Operational Systems</h1>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#functionalities">Functionalities</a></li>
+<li><a href="#system-structure">System Structure</a></li>
+<li><a href="#process">Process</a></li>
+<li><a href="#threads">Threads</a></li>
+<li><a href="#inter-process-communication">Inter-Process Communication</a></li>
+<li><a href="#schedulers">Schedulers</a></li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>An OS is a complex software. It has low level aspects (like drivers and management of memory devices) and high level aspects (like text editors and user interface)</p>
+<p>The basics objectives of an OS can be described in two concepts: <strong>Abstraction</strong> and <strong>Resources Management</strong>.</p>
+<h3 id="abstraction">Abstraction</h3>
+<p>The OS must define abstract interfaces to access hardware resources. The abstraction makes apps independent of hardware. An app built for windows can run in every windows machine, doesn&#39;t matter to the app if it is a DualCore or a CoreI7. Define an API also makes development better, this way every program can access the same resource using the same technique.</p>
+<h3 id="resources-management">Resources Management</h3>
+<p>The OS must define rules to manage hardware resources usage and resolve race conditions or conflicts. One example of this need is the CPU. When a system is running, all kind of process request attention of CPU. If the OS doesn&#39;t manage that in a efficient way, probably we would have problems like starvation or slow processing time.</p>
+<p>So wrapping it up, an OS abstracts the hardware, managing its resources and giving to apps an abstract environment of execution, where the access to the hardware happens using simple API&#39;s. Those API&#39;s should be consistent, don&#39;t matter in which hardware it is executing.</p>
+<p><em>Obs: A user level software can&#39;t access a hardware resource. It always have to request the action to OS</em></p>
+<h3 id="components-of-an-os">Components of an OS</h3>
+<p><img src="/home/romulo-farias/Documents/university/5th_semester/OperationalSystems/half1/components-of-os.png" alt="Components of an OS"></p>
+<h2 id="functionalities">Functionalities</h2>
+<p>To achieve its goals of abstraction and resources management, an Operational System must cover a lot of areas. Each one of the system&#39;s resources have their own problems to be solved. Some of the implementations are:</p>
+<ul>
+<li><strong>Process Management</strong></li>
+<li><strong>Devices Management</strong></li>
+<li><strong>File System</strong></li>
+<li><strong>Memory Management</strong></li>
+<li><strong>Protection Management</strong></li>
+<li>Networking Support</li>
+<li>User interface</li>
+<li>Kernel</li>
+<li>etc</li>
+</ul>
+<h3 id="process-management">Process Management</h3>
+<p>The objective of this functionality is fairly share the processing capacity between applications, avoiding starvation and always respecting the user&#39;s priority.</p>
+<p>The process management tries to create an abstraction, in such way that it feels like &quot;it has a processor to each program&quot;;</p>
+<h2 id="devices-management">Devices Management</h2>
+<p>Also known as I/O Management, it must implement an abstract form of  interaction between programs and devices (commonly called as drivers).</p>
+<h2 id="file-systems">File Systems</h2>
+<p>The File System is built over the Devices Management. Its main objective is create an abstraction of files and directories, defining their access interface and politics of use. Those files can be anywhere like a disk, cloud, USB device or a external disk.</p>
+<h2 id="protection-management-security-">Protection Management (Security)</h2>
+<p>When computers are connected to network and shared by different users, it&#39;s important to strictly define the resources that each user can access (read, write and execute), and make sure that those rules are followed.</p>
+<h2 id="politics-and-mechanisms">Politics and Mechanisms</h2>
+<p><strong>Politics</strong> are the abstract decision rules, that could be solved using high levels algorithms, like decide the amount of memory that each program might receive or what is the next network package to be sent.</p>
+<p><strong>Mechanisms</strong> are the low level procedures used to implement politics, like give or take memory from a program, send or receive a network package. The mechanisms must be sufficiently generic to change politics without change mechanisms.</p>
+<h1 id="system-structure">System Structure</h1>
+<p>An OS isn&#39;t a unique and closed block of code executing over some hardware. It&#39;s composed by many components with complementary goals. Some of that components are:</p>
+<ul>
+<li><strong>Core or Kernel:</strong> it&#39;s the OS&#39;s heart. Its responsibilities is to manage hardware resources and implement the main abstractions used by programs.</li>
+<li><strong>Drivers:</strong> Specific modules to access physical devices. There&#39;s a drive for each type of device.</li>
+<li><strong>Boot Code:</strong> the hardware booting process requires complex jobs to be done, such as recognize the installed devices, test and setup them to be ready to use. Other important job is load the kernel in the memory and execute it.</li>
+<li><strong>Utilities Programs:</strong> they are programs to make the user&#39;s life easier (files handling, commands interpreter, terminal, user interface, etc)</li>
+</ul>
+<p><img src="/home/romulo-farias/Documents/university/5th_semester/OperationalSystems/half1/unix-system-structure.png" alt="unix-system-structure"></p>
+<p>Most of the computers follows an architecture proposed by <em>John Von Neumann</em>. The main idea of this model is a program be loaded into the memory along the data.</p>
+<h2 id="physical-architecture">Physical Architecture</h2>
+<p>The essential components of a computer (CPU, Memory and I/O devices) are connected by buses to transfer data and commands.</p>
+<p><img src="/home/romulo-farias/Documents/university/5th_semester/OperationalSystems/half1/physical-architecture.png" alt="Physical Architecture"></p>
+<h3 id="buses">Buses</h3>
+<ul>
+<li>Address bus says the memory position to be accessed</li>
+<li>Control bus says the action to be executed</li>
+<li>Data bus transports data between the CPU, Memory and I/O</li>
+</ul>
+<h3 id="central-processing-unity-cpu-">Central Processing Unity (CPU)</h3>
+<p>The core of a computer is the CPU. Its responsibility is read instructions and data from memory or devices, process them, and give back the results. A normal CPU consists of:</p>
+<ul>
+<li>Arithmetic and Logic Unity: logical operations and math stuff are done here</li>
+<li>Registers: store the working data</li>
+<li>Special Registers:<ul>
+<li>Program counter: stores the memory address of the next instruction to be loaded</li>
+<li>Stack pointer: stores a pointer the running stack&#39;s top</li>
+<li>Program Status Word: stores condition bits.</li>
+</ul>
+</li>
+</ul>
+<h3 id="memory-management-unity-mmu-">Memory Management Unity (MMU)</h3>
+<p>It&#39;s the controller that mediates the access to the memory. It analyzes each address requested by the CPU, valid them, and make the needed address conversions to execute the requested command (read or write of some memory address).</p>
+<p><img src="/home/romulo-farias/Documents/university/5th_semester/OperationalSystems/half1/memories.gif" alt="memories"></p>
+<h2 id="interruptions-and-exceptions">Interruptions and Exceptions</h2>
+<p>It&#39;s a important and common technique used in the interaction between CPU and controllers. When a controller has something important to give to the CPU, it has two communication alternatives:</p>
+<ul>
+<li>Wait until the CPU asks for the information (can be a slow process)</li>
+<li>Send a interruption (using the Control bus)</li>
+</ul>
+<p>When a CPU receives an interruption, its circuits are headed to a default address, which has a routine to handle interruptions (interrupt handler). When this routine it&#39;s finished, the CPU comes back to the point when it stopped.</p>
+<p>Each interruptions must be handled in a different way, so an OS defines an vector of addresses to each routine handler. This vector is known as <em>Interrupt Vector</em></p>
+<h1 id="process">Process</h1>
+<p>A <strong>Program</strong> is a finite sequence of instructions. Always stored in disk, it can&#39;t change itself.</p>
+<p>A <strong>Process</strong> is an abstraction that represents a program being executed. Always stored in memory, it can change itself during the execution, and can have more than one program instance in execution.</p>
+<h2 id="process-control-block-pcb-">Process Control Block (PCB)</h2>
+<p>Represents the process inside of the OS. It&#39;s a memory segment reserved to the segment that keeps its information:</p>
+<ul>
+<li>PID (program identifier)</li>
+<li>State (running, blocked, etc)</li>
+<li>Address of next Instruction</li>
+<li>CPU Registers</li>
+<li>Memory Management infos</li>
+<li>etc</li>
+</ul>
+<h2 id="inter-process-communication-icp-">Inter-Process Communication (ICP)</h2>
+<p>A process can&#39;t see other process, it is &quot;isolated from exterior world&quot;. So it was built this mechanism (ICP) to share information between processes.</p>
+<ul>
+<li>Local mechanisms<ul>
+<li>Named pipes - First in First out (FIFO)</li>
+<li>Unidirectional pipes</li>
+<li>Message Queues</li>
+<li>Shared Memory</li>
+</ul>
+</li>
+<li>Client/Server mechanisms<ul>
+<li>Sockets</li>
+<li>Remote Procedure Calls</li>
+</ul>
+</li>
+</ul>
+<h2 id="processes-category">Processes Category</h2>
+<p>While a process is executing, it can perform only two behaviors:</p>
+<ul>
+<li>CPU Bound: math, memory/register operations</li>
+<li>I/O Bound: handling files and external devices (keyboard, mouse, sound, etc)</li>
+</ul>
+<h2 id="life-cycle">Life Cycle</h2>
+<p>States of a process:</p>
+<ul>
+<li>Created: it was just loaded to the memory, it have never used the CPU</li>
+<li>Ready: Context fully loaded and ready to the CPU use</li>
+<li>Executing: in CPU</li>
+<li>Blocked: waiting for I/O event</li>
+<li>Suspended: swapping information from memory</li>
+<li>Finished</li>
+</ul>
+<p><img src="/home/romulo-farias/Documents/university/5th_semester/OperationalSystems/half1/process-life-cycle.png" alt="process-life-cycle"></p>
+<p>#Threads</p>
+<p>In a multi-processed/cluster machine we can have a lot of process running at the same time, but there is cases that the need is a concurrence inside of the same process. This problem is resolved using <strong>Threads</strong>.</p>
+<p>Threads are a mechanism to subdivide a process in two or more jobs that can be executed simultaneously. A thread shares the resources given to the parent process.</p>
+<p>Obs: The PCB must have a list of threads!</p>
+<h1 id="inter-process-communication">Inter-Process Communication</h1>
+<p>It&#39;s common to process exchange information between them. There are three topics related to that:</p>
+<ol>
+<li>How a process sends information to other process</li>
+<li>How to avoid communication conflicts</li>
+<li>How handle dependencies. Example: A depends of B; B of C; and C of A. How to solve that?</li>
+</ol>
+<h2 id="direct-communication">Direct Communication</h2>
+<p>A communication can be implemented by two basic actions: Send and Receive data. This approach, which the process who emits the data knows the receiver, is called Direct Communication.</p>
+<p>Few systems implement this approach.</p>
+<h2 id="indirect-communication">Indirect Communication</h2>
+<p>This approach guarantee a communication without the receiver know the issuer and vice-versa. The OS creates an Communication Channel which gives the tools to process read and receive data.</p>
+<p>In the real world, Indirect communication is implemented because its more flexible than direct.</p>
+<h2 id="synchronism">Synchronism</h2>
+<p>Talking about synchronism aspects, a Communication Channel can be:</p>
+<ul>
+<li>Synchronous: When the action of read or write blocks the Communication Channel</li>
+<li>Asynchronous: When the action of read or write doesn&#39;t block the Communication Channel</li>
+<li>Semi-Synchronous: When the action of read or write blocks the Communication Channel for a determined time</li>
+</ul>
+<h2 id="communication-mechanisms">Communication Mechanisms</h2>
+<ul>
+<li>Shared memory</li>
+<li>OS built Mechanisms<ul>
+<li>Message exchanging</li>
+<li>Pipes</li>
+<li>Signals</li>
+</ul>
+</li>
+</ul>
+<h1 id="schedulers">Schedulers</h1>
+<p>A scheduler, in a given list of process, is responsible for say which process is the next one to be executed. There are two types of scheduling:</p>
+<ul>
+<li>Short Time: Second Memory -&gt; Main Memory</li>
+<li>Long Time: Main Memory -&gt; CPU</li>
+</ul>
+<p>The main objectives of a scheduler are:</p>
+<ul>
+<li>Maximize CPU usage</li>
+<li>Maximize number of done process per time unity</li>
+<li>Guarantee that all process receives the CPU</li>
+<li>Minimize response time to the user</li>
+</ul>
+<p>The <strong>Dispatcher</strong> gives the control of a process to the CPU. Dispatch Latency is the time that a process dispatch takes to finish (a process is interrupted and the next one starts).</p>
+<p><strong>Overhead</strong> is the time of idle CPU</p>
+<h2 id="criteria-to-compare-schedulers-">Criteria to compare Schedulers:</h2>
+<ol>
+<li>CPU usage</li>
+<li>Throughput (number of completed process per time unity)</li>
+<li>Turnaround time</li>
+<li>Waiting time</li>
+<li>Response time</li>
+</ol>
+<p>The objective is maximize criteria 1 and 2; Minimize criteria 3, 4 and 5.</p>
+<h2 id="type-of-schedulers">Type of Schedulers</h2>
+<ul>
+<li>Non-Preemptive: process in execution can&#39;t be stopped</li>
+<li>Preemptive: process in execution can be removed from CPU</li>
+</ul>
+<h2 id="common-politics">Common Politics</h2>
+<ul>
+<li>First In First Out (FIFO)<ul>
+<li>Preemptive</li>
+<li>First process in the Queue is the first to executed</li>
+</ul>
+</li>
+<li>Shortest Job First (SJF)<ul>
+<li>Preemptive</li>
+<li>Shortest process is the first to be executed</li>
+<li>Starvation</li>
+<li>Problems in determine which process is shorter than other</li>
+</ul>
+</li>
+<li>Round-Robin<ul>
+<li>Preemptive</li>
+<li>Each process executes during a determine time slice</li>
+<li>When the reserved time ends, the process goes to the end of the line</li>
+<li>Similar to FIFO, but if a determine time to leave CPU</li>
+<li>The time slice is called <strong>Quantum</strong></li>
+</ul>
+</li>
+<li>Priority<ul>
+<li>Non-Preemptive</li>
+<li>Which process has an Priority, usually given by the CPU<ul>
+<li>An User can change a Priority</li>
+</ul>
+</li>
+<li>The Priority can be dynamic, the OS can change it to avoid starvation</li>
+</ul>
+</li>
+<li>Multiple Queues<ul>
+<li>Preemptive</li>
+<li>It has some Queues based on priorities.<ul>
+<li>Each Queue has a Politic to execute process. Can be FIFO, JSF, Round-Robin etc</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></body>
+</html>
